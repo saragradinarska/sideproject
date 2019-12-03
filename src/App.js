@@ -6,29 +6,32 @@ let listShoppingCartItems = [
     title:'Blinding Lights',
     image: 'https://img.discogs.com/dk-J_uHHespihzSK_HHGi9d-wT4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14469023-1575156456-8941.jpeg.jpg',
     description: 'Released: 2019',
-    link:  'https://google.com'
+    link:'https://genius.com/The-weeknd-blinding-lights-lyrics',
   },
   {
     title: 'Party Monster',
     image: 'https://i.pinimg.com/originals/ca/61/a5/ca61a53d7dbf76f1d5afde63b2a6e0c0.jpg',
     description: 'Released: 2016',
+    link:'https://genius.com/The-weeknd-party-monster-lyrics',
 
   },
   {
     title: 'Heartless',
     image: 'https://upload.wikimedia.org/wikipedia/en/7/78/The_Weeknd_-_Heartless.png',
     description: 'Released 2019',
-   
+    link:'https://genius.com/The-weeknd-heartless-lyrics',
   },
   {
     title: 'Starboy',
     image: 'https://images-na.ssl-images-amazon.com/images/I/81pX%2BM-8cuL._SL1400_.jpg',
     description: 'Released 2016',
+    link:'https://genius.com/The-weeknd-starboy-lyrics',
   },
   {
     title: 'I Feel It Coming',
     image: 'https://i.pinimg.com/originals/7c/2b/fd/7c2bfd4cf6c4ec759c80886d7d83f8bd.jpg',
-    description: 'Released 2016'
+    description: 'Released 2016',
+    link:'https://genius.com/The-weeknd-i-feel-it-coming-lyrics',
   }
 
 ]
