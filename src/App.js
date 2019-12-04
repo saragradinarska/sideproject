@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <h1>The Weeknd</h1>
-      <p>Singer,Songwriter and Record Producer</p>
+      <p>Singer, Songwriter and Record Producer</p>
       <SearchForm />
       <ShoppingCart />
       
