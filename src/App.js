@@ -1,7 +1,8 @@
+
 import React, {useState} from 'react';
 import './App.css';
 
-let listShoppingCartItems = [
+let listSongResultItems = [
   {
     title:'Blinding Lights',
     image: 'https://img.discogs.com/dk-J_uHHespihzSK_HHGi9d-wT4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14469023-1575156456-8941.jpeg.jpg',
@@ -43,8 +44,12 @@ function App() {
     <div className="App">
       <h1>The Weeknd</h1>
       <p>Singer, Songwriter and Record Producer</p>
+      <div className="Header">
+        <input className="SearchBar" type='text' placeholder='Explore Tracks' />
+        Search The Weeknd Lyrics  
+      </div>
       <SearchForm />
-      <ShoppingCart />
+      <SongResults />
       
      </div>
   );
@@ -56,14 +61,14 @@ function App() {
   </div>
   );
 }
- function ShoppingCart() {
+ function SongResults() {
 
-  const postsSequence = listShoppingCartItems.map((product) =>
+  const postsSequence = listSongResultItems.map((product) =>
     <Song title={product.title} image={product.image} description={product.description} releaseYear={product.releaseYear} link={product.link} />
   );
 
    return(
-     <div className="cart">
+     <div className="lyric options">
       {postsSequence}
      </div>
    );
@@ -93,12 +98,9 @@ function Song(props) {
 function SearchForm() {
   return(
     <form>
-      <label>
-        Search The Weeknd Lyrics:
-        <input type="text" name="song lyric" />
-      </label>
-      <input type="submit" value="Explore" />
-    </form>
+      {/* Search The Weeknd Lyrics:   
+        <input type="text" /> */}
+     </form>
   );
   }
 export default App;

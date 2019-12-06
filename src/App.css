@@ -1,82 +1,68 @@
+
+body.html {
+  margin:0;
+}
 .App {
-  text-align: center;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-size: contain;
+  margin: 2em orange ;
+  padding: 1em ;
+  text-align: center;
   align-items: center;
+  font-size: normal;
+  font-weight: bold;
+  color:orange;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: url("https://fsa.zobj.net/crop.php?r=PhZYZNmjIaPGktgnvt2Fe8QTuDbNmQzD9C8fLIk3ZylUCwjQ_to3Y43NkknCzVYOXdYOoaF5dEaYM84CigzEFTOPbKMOP8qjETSUqS3KrwOSqsx6l4JWXKrrdrRsFMyaGRqgjpwUNlaGuXxA");
   border: 2px solid orange;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  border-bottom: 2px solid orange;
-  border-top: 2px solid orange;
- color:orange;
- /* background-repeat: no-repeat; */
-  background-size: contain;
 }
 
 
 .song {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 700px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
   flex-wrap: wrap;
 }
 .title{
+  flex-direction: column;
   font-size:35px;
- justify-content: space-between;
-  width: 100px;
-  height: 100px;
   text-size-adjust: 40px;
   margin-bottom: 60px;
 }
 
 .image {
-border: solid orange;
+border: 2px solid orange;
 background: orange;
 width: 250px;
 align-items: center;
 height: 250px;
-
-
 }
 
 .description {
-text-align: center;
-width: 200px;
 color:orange;
 justify-content: space-evenly;
 font-family:'Times New Roman', Times, serif;
+font-size: 25px;
 
 }
 
-.releaseYear {
-  color:orange;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  
+.SearchBar {
+  display:flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 2em;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background:aquamarine;
 }
 
-.searchForm {
-  display: flex;
-  /* margin-left: 50px; */
-}
 .App-logo {
   height: 40px;
-}
-
-.App-header {
-  
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- 
-
 }
 
 .App-link {
@@ -85,8 +71,6 @@ font-family:'Times New Roman', Times, serif;
 
 .Active{
   background-color: orange;
-  
- 
 }
 
 .link{
