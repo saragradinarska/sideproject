@@ -45,7 +45,7 @@ function App() {
       <h1>The Weeknd</h1>
       <p>Singer, Songwriter and Record Producer</p>
       <div className="Header">
-        <input className="SearchBar" type='text' placeholder='Explore Tracks' />
+        <input className="SearchBar" type='text' placeholder='Explore Tracks...' />
         Search The Weeknd Lyrics  
       </div>
       <SearchForm />
