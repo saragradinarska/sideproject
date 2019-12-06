@@ -47,7 +47,6 @@ function App() {
       <div className="Header">
         <input className="SearchBar" type='text' placeholder='Explore The Weeknd Tracks...' />
         </div>
-     
       <SearchForm />
       <SongResults />
       </div>
@@ -99,7 +98,9 @@ function SearchForm() {
   <form>
   <label>
   </label>
-  <input type="submit" value=" Go " />
+  <div className="Bar">
+  <button type="button">GO</button>
+  </div>
 </form>
   );
   }
