@@ -40,15 +40,21 @@ let listSongResultItems = [
 
 function App() {
 
+  const [search,setSearch] = useState("");
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  }
+
   return (
     <div className="App">
       <h1>The Weeknd</h1>
       <p>Singer, Songwriter and Record Producer</p>
       <div className="Header">
-        <input className="SearchBar" type='text' placeholder='Explore The Weeknd Tracks...' />
+        <input onChange={handleChange} className="SearchBar" type='text' placeholder='Explore The Weeknd Tracks...' />
         </div>
-      <SearchForm />
-      <SongResults />
+      
+      <SongResults searchQuery={search} />
       </div>
   );
 }
@@ -59,9 +65,11 @@ function App() {
   </div>
   );
 }
- function SongResults() {
+ function SongResults(props) {
 
-  const postsSequence = listSongResultItems.map((product) =>
+  const filteredValues = listSongResultItems.filter(function(song){ return song.title.includes(props.searchQuery) });
+
+  const postsSequence = filteredValues.map((product) =>
     <Song title={product.title} image={product.image} description={product.description} releaseYear={product.releaseYear} link={product.link} />
   );
 
@@ -91,17 +99,5 @@ function Song(props) {
   </div>
 )
   
-}
-
-function SearchForm() {
-  return (
-  <form>
-  <label>
-  </label>
-  <div className="Bar">
-  <button type="button">GO</button>
-  </div>
-</form>
-  );
   }
 export default App;
